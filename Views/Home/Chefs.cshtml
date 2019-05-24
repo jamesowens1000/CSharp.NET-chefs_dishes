@@ -1,0 +1,26 @@
+﻿<div class="head">
+    <h1>Chefs | <a href="/dishes">Dishes</a></h1>
+    <a class="addLink" href="/new">Add a Chef</a>
+</div>
+<h3>Check out our roster of Chefs!</h3>
+<hr>
+<table class="table table-striped table-bordered">
+    <thead>
+        <th>Name</th>
+        <th>Age</th>
+        <th># of Dishes</th>
+    </thead>
+    <tbody>
+        @if (ViewBag.AllChefs != null)
+        {
+            @foreach(var c in ViewBag.AllChefs)
+            {
+                <tr>
+                    <td>@c.FirstName @c.LastName</td>
+                    <td>@Chef.CalculateAge(c.DOB)</td>
+                    <td>@c.CreatedDishes.Count</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

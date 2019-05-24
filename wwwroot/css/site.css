@@ -1,0 +1,48 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.head{
+    margin-bottom: 50px;
+}
+.head a{
+    text-decoration: underline;
+}
+.head h1{
+    display: inline-block;
+    margin-left: 38%;
+}
+.addLink{
+    display: inline-block;
+    margin-left: 25%;
+}
+.row{
+    margin: 25px 0;
+}
+.row label{
+    width: 150px;
+}
+.row input[type="date"]{
+    width: 174px;
+}
+.row span{
+    color: red;
+    margin-left: 15px;
+}
+.row textarea{
+    resize: none;
+    height: 100px;
+    width: 175px;
+}
+.reg, .reg:hover{
+    color: black;
+    margin-left: 25%;
+}
